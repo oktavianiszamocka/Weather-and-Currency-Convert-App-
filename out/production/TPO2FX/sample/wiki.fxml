@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="548.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WikiController">
+   <content>
+      <WebView fx:id="webView" prefHeight="541.0" prefWidth="639.0" />
+   </content>
+</ScrollPane>

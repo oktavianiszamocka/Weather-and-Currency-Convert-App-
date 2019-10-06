@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="mainmenu" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane alignment="center" hgap="10" prefHeight="480.0" prefWidth="477.0" vgap="10">
+         <children>
+            <AnchorPane prefHeight="471.0" prefWidth="477.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="28.0" text="Country" />
+                  <TextField fx:id="country_name" layoutX="98.0" layoutY="23.0" />
+                  <TextField fx:id="city_name" layoutX="98.0" layoutY="75.0" />
+                  <Label layoutX="25.0" layoutY="80.0" text="City" />
+                  <Label layoutX="25.0" layoutY="132.0" text="Convert To" />
+                  <TextField fx:id="currency" layoutX="98.0" layoutY="127.0" />
+                  <Button fx:id="weather_button" layoutX="304.0" layoutY="23.0" mnemonicParsing="false" onAction="#weather_click" prefHeight="31.0" prefWidth="155.0" text="Get Weather" />
+                  <Button fx:id="ExchangeRate_button" layoutX="304.0" layoutY="65.0" mnemonicParsing="false" onAction="#exchange_click" prefHeight="31.0" prefWidth="155.0" text="Get Exchange Rate" />
+                  <Button fx:id="PLN_button" layoutX="304.0" layoutY="112.0" mnemonicParsing="false" onAction="#NBP_click" prefHeight="31.0" prefWidth="155.0" text="Get Polish Rate" />
+                  <Button fx:id="Wiki_button" layoutX="304.0" layoutY="158.0" mnemonicParsing="false" onAction="#getWiki" text="Get City Information" />
+                  <TextArea fx:id="weather_textArea" layoutX="21.0" layoutY="214.0" prefHeight="120.0" prefWidth="440.0" />
+                  <Label layoutX="21.0" layoutY="185.0" text="Weather" />
+                  <Label fx:id="cur" layoutX="20.0" layoutY="350.0" text="Currency" />
+                  <TextField fx:id="cur_textfield" layoutX="88.0" layoutY="345.0" prefHeight="31.0" prefWidth="115.0" />
+                  <Label fx:id="dest_cur" layoutX="255.0" layoutY="350.0" text="Currency1" textAlignment="RIGHT" />
+                  <Label fx:id="Pln" layoutX="292.0" layoutY="411.0" text="PLN" />
+                  <TextField fx:id="PLN_textfield" layoutX="336.0" layoutY="406.0" prefHeight="31.0" prefWidth="115.0" />
+                  <TextField fx:id="destCur_textfield" layoutX="336.0" layoutY="345.0" prefHeight="31.0" prefWidth="115.0" />
+                  <TextField fx:id="result_textfield" layoutX="88.0" layoutY="406.0" prefHeight="31.0" prefWidth="115.0" />
+                  <Label fx:id="result" layoutX="21.0" layoutY="411.0" text="Currency" />
+               </children>
+            </AnchorPane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
